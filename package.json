@@ -10,7 +10,7 @@
     "date-fns": "^1.29.0"
   },
   "devDependencies": {
-    "soap": "^0.26.0",
+    "soap": "^0.30.0",
     "standard": "^14.3.1"
   }
 }

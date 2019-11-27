@@ -9,7 +9,7 @@ const format = require('date-fns/format')
 const soap = require('soap')
 
 async function main (year) {
-  const client = await soap.createClientAsync('https://swea.riksbank.se/sweaWS/wsdl/sweaWS_ssl.wsdl')
+  const client = await soap.createClientAsync('https://swea.riksbank.se/sweaWS/wsdl/sweaWS_ssl.wsdl', { forceSoap12Headers: true })
 
   const start = new Date(year, 0, 1)
   const end = endOfYear(start)
